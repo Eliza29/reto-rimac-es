@@ -1,0 +1,19 @@
+@use './base/fonts';
+@use './base/variables' as *;
+@use './base/globals' as *;
+
+// Componentes
+@use './components/header' as *;
+@use './components/footer' as *;
+@use './components/login' as *;
+@use './components/form' as *;
+@use './components/stepBar' as *;
+@use './components/step1' as *;
+@use './components/plans' as *;
+@use './components/step2' as *;
+
+// layouts
+@use './layouts/login-layout' as *;
+@use './layouts/main-layout' as *;
+
+@include fonts.load-fonts;

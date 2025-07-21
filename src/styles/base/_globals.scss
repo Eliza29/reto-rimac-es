@@ -1,0 +1,49 @@
+@use '../base/variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'BR Sonoma', sans-serif;
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+}
+
+.line {
+    background-color: $blue-gray;
+    grid-column: span 4;
+    justify-self: center;
+    height: 1px;
+    width: 100%;
+
+
+    @media (min-width: 768px) {
+
+        display: none;
+
+    }
+
+}

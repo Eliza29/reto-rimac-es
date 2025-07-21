@@ -1,0 +1,96 @@
+@use '../base/variables' as *;
+
+.step1 {
+    padding: 1rem;
+
+    &__back {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+            grid-column: span 12;
+        }
+
+        button {
+            background: none;
+            border: none;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__header {
+        grid-column: span 4;
+        text-align: left;
+
+        h2,
+        p {
+            line-height: 2rem;
+        }
+
+        h2 {
+            font-size: 24px;
+
+        }
+
+        @media (min-width: 768px) {
+            text-align: center;
+            grid-column: 4 / span 6;
+
+            h2 {
+                font-size: 32px;
+
+            }
+        }
+    }
+
+}
+
+.card__container {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    grid-column: span 4;
+
+    @media (min-width: 768px) {
+        grid-column: span 12;
+        flex-direction: row;
+
+    }
+
+}
+
+.card-radio {
+    position: relative;
+    width: 100%;
+    max-width: 18rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid $bg-neutral;
+    box-shadow: 0 3px 10px #4f4fff26;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+
+    &:hover {
+        border: 4px solid $black;
+    }
+
+    &.selected {
+        border: 4px solid $black;
+
+    }
+
+    &__btn {
+        position: absolute;
+        top: 16px;
+        right: 24px;
+        height: 24px;
+        width: 24px;
+    }
+
+
+}

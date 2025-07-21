@@ -1,0 +1,73 @@
+
+@mixin load-fonts {
+
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-Bold.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-Light.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-ExtraLight.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-ExtraLight.woff') format('woff');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-LightItalic.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-LightItalic.woff') format('woff');
+        font-weight: 300;
+        font-style: italic;
+        font-display: swap;
+    }
+    
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-Medium.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-SemiBold.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+    }
+    
+    @font-face {
+        font-family: 'BR Sonoma';
+        src: url('../../assets/fonts/BRSonoma-Regular.woff2') format('woff2'),
+            url('../../assets/fonts/BRSonoma-Regular.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+
+
+
+

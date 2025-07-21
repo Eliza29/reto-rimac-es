@@ -1,0 +1,67 @@
+@use '../base/variables' as *;
+
+.plans {
+    grid-column: span 4;
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding: 1rem;
+
+    &__card {
+        border-radius: 24px;
+        width: 100%;
+        max-width: 17rem;
+        min-width: 17rem;
+        padding: 1.2rem;
+        box-shadow: 0 3px 10px #4f4fff26;
+    }
+
+    &__title {
+        display: flex;
+        margin: 1rem auto;
+        gap: 0.4rem;
+    }
+
+    &__hightlight {
+        font-size: 11px;
+        padding: 6px;
+        background-color: $green ;
+        border-radius: 6px;
+        font-weight: 800;
+
+    }
+
+    &__text {
+        font-size: 12px;
+        color: $gray-light;
+    }
+
+    &__list {
+        font-size: 14px;
+        line-height: 1.1rem;
+        margin: 1rem auto 2rem;
+
+        li {
+            margin-bottom: 1.4rem;
+            margin-left: 1rem;
+        }
+    }
+
+    &__button {
+        background-color: $red;
+        border: none;
+        border-radius: 40px;
+        color: $white;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 14px 40px;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        grid-column: span 12;
+        flex-direction: row;
+
+    }
+}

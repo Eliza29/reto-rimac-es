@@ -1,0 +1,55 @@
+@use '../base/variables' as *;
+
+
+.footer {
+    background-color: $black;
+    padding: 1.5rem 1rem;
+
+    .container {
+        gap: 0;
+        grid-auto-rows: 1fr;
+    }
+
+    &__logo {
+        grid-column: span 4;
+        justify-self: center;
+
+        img {
+            height: 32px;
+        }
+    }
+
+    &__text {
+        color: $white;
+        grid-column: span 4;
+        justify-self: center;
+        font-size: 12px;
+
+    }
+
+
+
+
+    @media (min-width: 768px) {
+        .container {
+            gap: 1rem;
+        }
+
+        &__logo {
+            grid-column: span 6;
+            justify-self: start;
+
+            img {
+                height: 36px;
+            }
+        }
+
+        &__text {
+            grid-column: span 6;
+            justify-self: end;
+        }
+
+
+    }
+
+}

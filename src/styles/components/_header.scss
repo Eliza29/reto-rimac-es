@@ -1,0 +1,63 @@
+@use '../base/variables' as *;
+
+
+.header {
+    padding: 1rem;
+
+  &__logo {
+    grid-column: span 2;
+    justify-self: start;
+    img{
+        height: 32px;
+    }
+  }
+
+  &__call {
+    grid-column: span 2;
+    justify-self: end;
+
+    img{
+        vertical-align: bottom;
+    }
+  }
+
+  &__text {
+    color: $black;
+   
+    &--left {
+        display: none;
+    }
+
+    &--right {
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+  }
+   
+  @media (min-width: 768px) {
+    &__logo {
+        grid-column: span 6;
+        justify-self: start;
+        img{
+            height: 36px;
+        }
+    }
+    &__call {
+        grid-column: span 6;
+        justify-self: end;
+    }
+    &__text {   
+        &--left {
+            display: inline;
+            margin-right: 16px;
+            font-size: 13px;
+
+        }
+
+  }
+
+  }
+  
+}
